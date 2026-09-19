@@ -1,9 +1,5 @@
-# abd
+# ABD
 
-Placeholder repository.
+Alphabet drill: click letters A→Z in order on a shuffled board.
 
-Previously empty — now initialized with a clean starter.
-
-## License
-
-MIT
+Open `index.html`.

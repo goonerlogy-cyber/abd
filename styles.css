@@ -1,0 +1,40 @@
+body {
+  font-family: system-ui, sans-serif;
+  text-align: center;
+  background: #111827;
+  color: #f3f4f6;
+  padding: 1.5rem;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(7, 48px);
+  gap: 8px;
+  justify-content: center;
+  margin: 1.25rem auto;
+}
+.letter {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  background: #1f2937;
+  color: inherit;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.letter.done { background: #10b981; color: #042f2e; }
+.letter.wrong { animation: shake 0.3s; background: #ef4444; }
+@keyframes shake {
+  25% { transform: translateX(-3px); }
+  75% { transform: translateX(3px); }
+}
+#status { color: #9ca3af; }
+button#reset {
+  background: #3b82f6;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
